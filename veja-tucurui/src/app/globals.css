@@ -1,0 +1,82 @@
+/* src/app/globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@import "tailwindcss"; /* Tailwind CSS v4 */
+
+/* ── Design tokens ──────────────────────────────────────────────── */
+:root {
+  --color-primary:     #233C34;
+  --color-primary-alt: #203E35;
+  --color-secondary:   #69766E;
+  --color-accent:      #005315;
+  --color-muted:       #BBCAC1;
+  --color-amber:       #F0B64B;
+  --color-amber-light: #FBEDD1;
+  --color-black:       #000000;
+  --color-white:       #FFFFFF;
+  --color-off-white:   #F7F5EF;
+  --color-bg:          #E8EDE4;
+
+  --font-sans: 'Roboto', sans-serif;
+}
+
+/* ── Base reset ─────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+}
+
+/* ── Tailwind custom theme ──────────────────────────────────────── */
+@theme {
+  --color-brand-primary:     #233C34;
+  --color-brand-primary-alt: #203E35;
+  --color-brand-secondary:   #69766E;
+  --color-brand-accent:      #005315;
+  --color-brand-muted:       #BBCAC1;
+  --color-brand-amber:       #F0B64B;
+  --color-brand-amber-light: #FBEDD1;
+  --color-brand-bg:          #DDDFD5;
+  --color-brand-off-white:   #F7F5EF;
+
+  --font-family-sans: 'Roboto', sans-serif;
+}
+
+/* ── Utilities & Layout ─────────────────────────────────────────── */
+@utility container-page {
+  width: 100%;
+  max-width: 2560px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: 640px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

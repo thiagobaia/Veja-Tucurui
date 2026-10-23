@@ -1,0 +1,8 @@
+export { HeroSection } from './HeroSection'
+export { CategoryGrid } from './CategoryGrid'
+export { PartnersCarousel } from './PartnersCarousel'
+export { ArticlesSection } from './ArticlesSection'
+export { SpotlightSection } from './SpotlightSection'
+export { SpotsSection } from './SpotsSection'
+export { GastronomyBanner } from './GastronomyBanner'
+export { AgendaSection } from './AgendaSection'
